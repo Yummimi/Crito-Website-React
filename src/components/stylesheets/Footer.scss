@@ -1,0 +1,43 @@
+@import './Core.scss';
+
+footer{
+    background-color: #0E1021;
+    
+
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding-top: 30px;
+
+        @media(min-width: 992px){
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        p, i{
+            color: #ffffffb8;
+            text-align: center;
+
+        }
+
+        i{
+            font-size: 1.3em;
+
+            @media(min-width: 992px){
+                font-size: 1em;
+            }
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding-bottom: 30px;
+
+            @media(min-width: 992px){
+                gap: 10px;
+            }
+        }
+    }
+}
