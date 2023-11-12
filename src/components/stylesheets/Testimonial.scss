@@ -1,0 +1,102 @@
+@import './Core.scss';
+
+.testimonial{
+    padding-bottom: 120px;
+
+    .container{
+        background-color: white;
+        
+
+        .title-box{
+            text-align: center;
+            padding-top: 120px;
+        }
+
+        .content-box{
+            display: flex;
+            flex-direction: column;
+            padding: 0 3%;
+            gap: 70px;
+
+            .review{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 35px;
+
+                .icons{
+                    display: flex;
+                    gap: 5px;
+                    color: #F94D1C;
+                    font-size: 0.8em;
+
+                }
+
+                .first{
+                    margin-top: 90px;
+                    
+                    @media(min-width: 1200px){
+                        margin: 0;
+                    }
+                }
+
+                .describing-text{
+                    text-align: start;
+                    }
+
+                .user{
+                    display: flex;
+                    gap: 20px;
+                    width: 110%;
+
+                    .text{
+                        text-align: start;
+
+                        p{
+                            color: #F94D1C;
+                        }
+                    }
+                    
+}
+            }
+
+            @media(min-width: 768px){
+                padding: 0 15%;
+            }
+
+            @media(min-width: 998px){
+                padding: 0 20%;
+            }
+
+            @media(min-width: 1200px){
+                flex-direction: row;
+                padding: 90px 5% 0;
+                gap: 50px;
+            }
+
+            @media(min-width: 1400px){
+                padding: 90px 8% 0;
+            }
+
+        }
+
+        .btn-box{
+            padding-top: 95px;
+            padding-bottom: 120px;
+
+            @media(min-width: 998px){
+                display: flex;
+                justify-content: center;
+            }
+
+            .button{
+                display: flex;
+                justify-content: center;
+
+                @media(min-width: 998px){
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

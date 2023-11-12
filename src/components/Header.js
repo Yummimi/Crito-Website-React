@@ -1,6 +1,7 @@
-import React from 'react'
-import './stylesheets/Header.scss'
-import HeaderLogo from '../assets/images/Logo.svg'
+import React from 'react';
+import './stylesheets/Header.scss';
+import HeaderLogo from '../assets/images/Logo.svg';
+import { Link } from "react-router-dom"
 
 const Header = () => {
   return (
@@ -35,16 +36,16 @@ const Header = () => {
 
                     <div className="social-media">
 
-                            <a href="https://www.facebook.com/" target= "_blank"><i className="fa-brands fa-facebook"></i></a>
+                            <Link to="https://www.facebook.com/" target= "_blank"><i className="fa-brands fa-facebook"></i></Link>
 
 
-                            <a href="https://twitter.com/?lang=en" target= "_blank"><i className="fa-brands fa-x-twitter"></i></a>
+                            <Link to="https://twitter.com/?lang=en" target= "_blank"><i className="fa-brands fa-x-twitter"></i></Link>
 
 
-                            <a href="https://www.instagram.com/" target= "_blank"><i className="fa-brands fa-instagram"></i></a>
+                            <Link to="https://www.instagram.com/" target= "_blank"><i className="fa-brands fa-instagram"></i></Link>
 
 
-                            <a href="https://www.linkedin.com/" target= "_blank"><i className="fa-brands fa-linkedin"></i></a>
+                            <Link to="https://www.linkedin.com/" target= "_blank"><i className="fa-brands fa-linkedin"></i></Link>
                     </div>
 
                 </div>
@@ -53,23 +54,23 @@ const Header = () => {
 
                     <nav>
                         <div>
-                            <a href="index.html" className="active">Home</a>
+                            <Link to="/" className="active">Home</Link>
                         </div>
 
                         <div>
-                            <a href="#">Service</a>
+                            <Link to="/services">Service</Link>
                         </div>
 
                         <div>
-                            <a href="#">News</a>
+                            <Link to="/news">News</Link>
                         </div>
 
                         <div>
-                            <a href="contact.html">Contact</a>
+                            <Link to="/contacts">Contact</Link>
                         </div>
                     </nav>
 
-                    <a href="login.html" className="button">Login<i className="fa-regular fa-arrow-up-right"></i></a>
+                    <Link to="/login" className="button">Login<i className="fa-regular fa-arrow-up-right"></i></Link>
 
                 </div>
 

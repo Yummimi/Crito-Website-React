@@ -1,0 +1,117 @@
+@import './Core.scss';
+
+.features{
+    
+    .container{
+        border: #a4a4a44e solid 4px;
+        padding: 50px;
+
+        .title{
+
+            h2{
+                margin-bottom: 40px;
+                text-align: center;
+
+                @media(min-width: 1400px){
+                    text-align: start;
+                }
+            }
+
+            .describing-text{
+                text-align: center;
+
+                @media(min-width: 1400px){
+                    text-align: start;
+                }
+            }
+
+            .btn-box{
+
+                .button{
+                    display: inline-block;
+                    text-align: center;
+                    width: 100%;
+                    font-weight: 600;
+                }
+
+            }
+
+            @media(min-width: 1400px){
+                margin-left: 30px;
+            }
+        }
+
+        .information{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+
+            @media (min-width: 1200px){
+                display: grid;
+                justify-content: space-between;
+                padding: 0 50px;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:    "buis start"
+                                        "fin risk";
+            }
+
+            @media(min-width: 1400px){
+                text-align: start;
+                column-gap: 150px;
+                padding: 0;
+                margin-right: 100px;
+            }
+
+
+
+            div{
+                margin: 30px;
+
+                @media (min-width: 1400px){
+                    width: 130%;
+                    margin: 0px;
+                }
+
+
+                h3{
+                    margin-bottom: 15px;
+                }
+                
+
+                i{
+                    font-size: 1.5em;
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+                }
+            }
+
+            .buis{
+                grid-area: buis;
+            }
+
+            .start{
+
+                grid-area: start;
+            }
+
+            .fin{
+
+                grid-area: fin;
+            }
+
+            .risk{
+
+                grid-area: risk;
+            }
+        }
+
+        @media (min-width: 1400px){
+            display: flex;
+            justify-content: space-between;
+            gap: 100px;
+        }
+    }
+}

@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './views/Home';
 import Contacts from './views/Contacts';
 import NotFound from './views/NotFound';
+import News from './views/News';
 
 // Install npm react-router-dom , bootstrap, sass, formik
 
@@ -15,6 +16,7 @@ root.render(
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/contacts' element={<Contacts />} />
+        <Route path='/news' element={<News />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>

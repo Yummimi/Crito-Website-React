@@ -1,0 +1,55 @@
+@import './Core.scss';
+
+.links{
+    background-color: #0E1021;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 95px;
+        padding-bottom: 95px;
+        
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+
+            img{
+
+                @media(min-width: 1200px){
+                    padding-right: 55%;
+                }
+
+                @media(min-width: 1400px){
+                    padding-right: 62%;
+                }
+            }
+
+            p{
+                color: #ffffffb8;
+                text-align: center;
+
+                @media(min-width: 1200px){
+                    text-align: start;
+                }
+            }
+            
+            h3{
+                color: #FFFFFF;
+                padding-top: 50px;
+            }
+
+            a{
+                color: #ffffffb8;
+            }
+        }
+
+        @media(min-width: 1200px){
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+        }
+    }
+}

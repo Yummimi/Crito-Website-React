@@ -1,12 +1,13 @@
 import React from 'react';
-import './stylesheets/Showcase.scss'
+import './stylesheets/Showcase.scss';
 import ManSuit from '../assets/images/man-in-suit.svg';
 import BlueDesign from '../assets/images/blue-design.svg';
 import WhiteLines from '../assets/images/white-lines.svg';
+import { Link } from "react-router-dom";
 
 const Showcase = () => {
   return (
-    <section class="showcase">
+    <section className="showcase">
         <div className="container">
             <div>
                 
@@ -17,10 +18,11 @@ const Showcase = () => {
                 <p>
                     Establish your vision and value proposition and turn them into testable prototypes.
                 </p>
+
+                <Link to="*" className="button">Get Consulting<i className="fa-regular fa-arrow-up-right"></i></Link>
                     
-                <a href="login.html" className="button">Get Consulting<i className="fa-regular fa-arrow-up-right"></i></a>
-                    
-                <a href="login.html" className="button button-transparent">Learn More<i className="fa-regular fa-arrow-up-right"></i></a>
+                <Link to="*" className="button button-transparent">Learn More<i className="fa-regular fa-arrow-up-right"></i></Link>
+                
             </div>
 
             <div className="image-container">

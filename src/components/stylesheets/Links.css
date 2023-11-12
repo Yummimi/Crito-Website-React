@@ -112,47 +112,52 @@ p {
   transform: scale(1.3);
 }
 
-footer {
+.links {
   background-color: #0E1021;
 }
-footer .container {
+.links .container {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: center;
-  padding-top: 30px;
+  padding-top: 95px;
+  padding-bottom: 95px;
 }
-@media (min-width: 992px) {
-  footer .container {
-    flex-direction: row;
-    justify-content: space-between;
+.links .container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+@media (min-width: 1200px) {
+  .links .container div img {
+    padding-right: 55%;
   }
 }
-footer .container p, footer .container i {
+@media (min-width: 1400px) {
+  .links .container div img {
+    padding-right: 62%;
+  }
+}
+.links .container div p {
   color: rgba(255, 255, 255, 0.7215686275);
   text-align: center;
 }
-footer .container i {
-  font-size: 1.3em;
-}
-@media (min-width: 992px) {
-  footer .container i {
-    font-size: 1em;
+@media (min-width: 1200px) {
+  .links .container div p {
+    text-align: start;
   }
 }
-footer .container div {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding-bottom: 30px;
+.links .container div h3 {
+  color: #FFFFFF;
+  padding-top: 50px;
 }
-footer .container div .social-media, footer .container div i {
-  color: white;
+.links .container div a {
+  color: rgba(255, 255, 255, 0.7215686275);
 }
-footer .container div .social-media:hover, footer .container div i:hover {
-  color: white;
-}
-@media (min-width: 992px) {
-  footer .container div {
-    gap: 10px;
+@media (min-width: 1200px) {
+  .links .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
   }
 }

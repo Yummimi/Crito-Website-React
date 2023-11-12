@@ -35,6 +35,14 @@ footer{
             gap: 20px;
             padding-bottom: 30px;
 
+            .social-media, i{
+                color: white;
+
+                &:hover{
+                    color: white;
+                }
+            }
+
             @media(min-width: 992px){
                 gap: 10px;
             }

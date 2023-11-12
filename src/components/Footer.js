@@ -1,5 +1,6 @@
-import React from 'react'
-import './stylesheets/Footer.scss'
+import React from 'react';
+import './stylesheets/Footer.scss';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -11,16 +12,16 @@ const Footer = () => {
 
         <div className="social-media">
 
-            <a href="https://www.facebook.com/" target= "_blank"><i className="fa-brands fa-facebook"></i></a>
+            <Link to="https://www.facebook.com/" target= "_blank"><i className="fa-brands fa-facebook"></i></Link>
 
 
-            <a href="https://twitter.com/?lang=en" target= "_blank"><i className="fa-brands fa-x-twitter"></i></a>
+            <Link to="https://twitter.com/?lang=en" target= "_blank"><i className="fa-brands fa-x-twitter"></i></Link>
 
 
-            <a href="https://www.instagram.com/" target= "_blank"><i className="fa-brands fa-instagram"></i></a>
+            <Link to="https://www.instagram.com/" target= "_blank"><i className="fa-brands fa-instagram"></i></Link>
 
 
-            <a href="https://www.linkedin.com/" target= "_blank"><i className="fa-brands fa-linkedin"></i></a>
+            <Link to="https://www.linkedin.com/" target= "_blank"><i className="fa-brands fa-linkedin"></i></Link>
 
             
         </div>
