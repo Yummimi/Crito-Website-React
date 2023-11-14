@@ -1,0 +1,42 @@
+@import './Core.scss';
+
+.lets-connect{
+    background-color: #f0efe9;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding-top: 95px;
+        padding-bottom: 95px;
+        
+        h1{
+            animation: FadeIn 3s ease-in-out forwards;
+            text-align: center;
+
+        }
+    }
+
+    .white-lines{
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        left: 0;
+    }
+
+    @keyframes FadeIn {
+
+        0% {
+            background-color: transparent;
+            opacity: 0;
+        }
+        100% {
+            color: black;
+            opacity: 1;
+        }
+    }
+}
