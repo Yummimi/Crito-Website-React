@@ -6,7 +6,6 @@ const Form = () => {
   const [formValues, setFormValues]= useState(InitialValues);
   const [formErrors, setFormErrors]= useState({});
   const [isSubmit, setIsSubmit] = useState(false);
-  const [isValidate, setIsValidate] = useState(false);
 
   const HandleChange = (e) => {
     const { name, value } = e.target;
@@ -19,32 +18,29 @@ const Form = () => {
     setFormErrors(errors);
 
     if (Object.keys(errors).length === 0) {
-      setIsValidate(true); }
-
-    const data = JSON.stringify(formValues)
-    
-      try{
+      try {
+        const data = JSON.stringify(formValues);
         const result = await fetch('https://win23-assignment.azurewebsites.net/api/contactform', {
           method: 'post',
           headers: {
             'content-type': 'application/json'
           },
           body: data
-        })
-        setIsSubmit(true)
-        console.log(result)
-  
-      } catch(error) {
-        setIsSubmit(false)
-      };
-    
+        });
+        setIsSubmit(true);
+        console.log(result);
+      } catch (error) {
+        setIsSubmit(false);
+      }
+    }
   };
 
   useEffect(() => {
-    if(Object.keys(formErrors).length === 0 && isSubmit) {
+    if (Object.keys(formErrors).length === 0 && isSubmit) {
       console.log(formValues);
     }
-  }, [formErrors])
+  }, [formErrors, isSubmit]);
+
 
   const validate = (values) => {
     const errors = {};
