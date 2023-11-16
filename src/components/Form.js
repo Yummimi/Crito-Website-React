@@ -18,6 +18,7 @@ const Form = () => {
     setFormErrors(errors);
 
     if (Object.keys(errors).length === 0) {
+      const success = document.getElementById("success");
       try {
         const data = JSON.stringify(formValues);
         const result = await fetch('https://win23-assignment.azurewebsites.net/api/contactform', {
@@ -29,6 +30,8 @@ const Form = () => {
         });
         setIsSubmit(true);
         console.log(result);
+        success.classList.add("success");
+        success.innerHTML = "<p>Message Sent!</p>";
       } catch (error) {
         setIsSubmit(false);
       }
@@ -79,9 +82,7 @@ const Form = () => {
 
             </div>
 
-              {/* {Object.keys(formErrors).length === 0 && isSubmit ? (<div className="success">Message Sent!</div>
-            ) : null} */}
-            <div className="success">Message Sent!</div>
+            <div id="success"></div>
 
             <form action="action_page.php" onSubmit={handleSubmit} noValidate>
 

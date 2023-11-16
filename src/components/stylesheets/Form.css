@@ -130,12 +130,17 @@ p {
 }
 .form .container .success {
   width: 50%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   margin: 0 auto;
   background-color: rgb(255, 255, 243);
   border-radius: 10px;
   border: 1px solid #f9d783;
+}
+.form .container .success p {
+  margin: 0;
 }
 .form .container form {
   display: flex;
